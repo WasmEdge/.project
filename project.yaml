@@ -1,23 +1,20 @@
 # .project metadata for WasmEdge Runtime
 # Documentation: https://github.com/cncf/automation/tree/main/utilities/dot-project
 
-# TODO: Add adopters list (ADOPTERS.md)
-# TODO: Add package_managers if distributed via registries
-
 schema_version: "1.0.0"
 slug: "wasmedge"
 name: "WasmEdge Runtime"
 description: "WasmEdge is a lightweight, high-performance, and extensible WebAssembly runtime for cloud native, edge, and decentralized applications. It powers serverless apps, embedded functions, microservices, smart contracts, and IoT devices"
 type: "project"
-project_lead: "juntao" # TODO: AUTO-DETECTED — please verify
-slack_channels: # TODO: AUTO-DETECTED — please verify the channel(s) below
+project_lead: "hydai"
+slack_channels:
   - name: "#WasmEdge"
     primary: true
 
 maturity_log:
   - phase: "sandbox"
     date: "2021-04-28T00:00:00Z"
-    issue: "https://github.com/cncf/toc/pull/1109" # TODO: AUTO-DETECTED — please verify
+    issue: "https://github.com/cncf/toc/pull/873"
 
 repositories:
   - "https://github.com/WasmEdge/WasmEdge"
@@ -26,14 +23,13 @@ website: "https://wasmedge.org/"
 
 artwork: "https://landscape.cncf.io/logos/wasmedge.svg"
 
-# TODO: Add ADOPTERS.md if your project tracks adopters
-# adopters:
-#   path: "https://github.com/WasmEdge/WasmEdge/blob/master/ADOPTERS.md"
+adopters:
+  path: "https://github.com/wasmedge/docs/blob/main/docs/contribute/users.md"
 
 
-# TODO: Add package manager identifiers if your project is distributed via registries
-# package_managers:
-#   docker: "WasmEdge/WasmEdge"
+package_managers:
+  docker: "WasmEdge/WasmEdge"
+  fedora: "wasmedge"
 
 social:
   twitter: "https://twitter.com/realwasmedge"
@@ -49,19 +45,23 @@ governance:
     path: "https://github.com/WasmEdge/WasmEdge/blob/master/docs/CONTRIBUTING.md"
   code_of_conduct:
     path: "https://github.com/WasmEdge/WasmEdge/blob/master/docs/CODE_OF_CONDUCT.md"
+  contributor_ladder:
+    path: "https://github.com/WasmEdge/WasmEdge/blob/master/docs/CONTRIBUTOR_LADDER.md"
 
 legal:
   license:
     path: "https://github.com/WasmEdge/WasmEdge/blob/master/LICENSE"
   identity_type:
-    has_dco: true # AUTO-DETECTED — please verify
-    has_cla: false # AUTO-DETECTED — please verify
+    has_dco: true
+    has_cla: false
     dco_url:
       path: "https://developercertificate.org/"
 
 documentation:
   readme:
     path: "https://github.com/WasmEdge/WasmEdge/blob/master/README.md"
+  api:
+    path: "https://wasmedge.org/docs/embed/c/reference/latest"
 
 landscape:
   category: "Runtime"
