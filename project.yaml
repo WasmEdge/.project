@@ -21,7 +21,7 @@ repositories:
 
 website: "https://wasmedge.org/"
 
-artwork: "https://landscape.cncf.io/logos/wasmedge.svg"
+artwork: "https://github.com/cncf/artwork/tree/main/projects/wasm-edge-runtime"
 
 adopters:
   path: "https://github.com/wasmedge/docs/blob/main/docs/contribute/users.md"
